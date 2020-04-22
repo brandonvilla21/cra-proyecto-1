@@ -1,9 +1,11 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -15,11 +17,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 20vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +37,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Section {
+  margin: 2rem 5rem;
+}
+
+.Subtitle {
+  color: rgb(27, 83, 129);
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.Personal-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Personal-info-list {
+  list-style-type: none;
+}
+
+.Personal-info-list > li {
+  margin: 1rem 0;
+}
+
+.Work-title {
+  color: rgb(27, 83, 129);
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.Name {
+  display: block;
+  font-size: 3rem;
+}
+
+.About-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.About-me > div{
+  flex: 1;
+}
+
+.Skills {
+  margin-left: 1rem;
+}
+.Skills-list {
+  columns: 3;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.Skills-list > li {
+  padding: .5rem 0;
+  list-style-position: inside;
+  -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+                 break-inside: avoid;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(27, 83, 129);;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  width: 100%;
 }
