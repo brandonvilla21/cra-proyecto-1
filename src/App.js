@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Subtitle from './components/Subtitle'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>My First React App</h1>
-      </header>
+      <Header />      
       <section className="Section">
         <div className="Personal-info">
           <div>
@@ -27,7 +25,7 @@ function App() {
       <section className="Section">
         <div className="About-me">
           <div>
-            <span className="Subtitle">Acerca de mi</span>
+            <Subtitle titulo="Acerca de mi" />
             <p>
               Soy una persona apasionada por la tecnología que le gusta aprender
               nuevas cosas cada día para poder ponerlas en práctica en proyectos
@@ -35,7 +33,7 @@ function App() {
           </p>
           </div>
           <div className="Skills">
-            <span className="Subtitle">Skills</span>
+            <Subtitle titulo="Habilidades" />
             <ul className="Skills-list">
               <li><strong>HTML</strong></li>
               <li><strong>CSS</strong></li>
